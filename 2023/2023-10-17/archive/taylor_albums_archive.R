@@ -427,3 +427,31 @@ gg_playback(
   frame_duration = .25,
   background = bg_col
 )
+
+# fourth replicate
+
+tuesdata <- tidytuesdayR::tt_load("2023-10-17")
+taylor_album_songs <- tuesdata$taylor_album_songs
+
+# Frequency table
+freq_table <- taylor %>% 
+  group_by(genre1) %>%           # group by the genre1
+  summarize(Abs_freq=n()) %>%   # absolute frequencies
+  mutate(Rel_freq=round(Abs_freq/sum(Abs_freq),digits=4), # relative frequencies
+         Perc_freq=Rel_freq*100) %>% # percentages 
+  mutate(Lab_text=paste0(Perc_freq,"%")) # paste0 collates strings, thus Lab_text is a new chr variable
+
+# Custom palette of colors
+my_palette = c("#FBD35D", "#75DBB2", "#FF6BAE")
+
+# Donut chart
+library(RColorBrewer)
+freq_table %>% 
+  ggplot(aes(x=1, y=Perc_freq,fill=as.factor(genre1))) +
+  geom_bar(stat="identity") + # stacked percentage bar chart using stat="identity" so geom_bar does not compute frequencies but uses the data table value as they are
+  geom_text(aes(label = Lab_text),position = position_stack(vjust = 0.5)) +
+  xlim(c(-0.5,1.5))+ # donut chart
+  coord_polar(theta="y") + 
+  labs(fill = "Genre", title = "Taylor Swift's discography", subtitle = "by genres") + 
+  scale_fill_manual(values = my_palette) +
+  theme_void()
