@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <origin/>
+                <pubdate>20220502</pubdate>
+                <title>Legislative District Boundaries for the State of New Jersey; NJOGIS municipal boundaries - based</title>
+                <edition>2021-01-15 Spatial data were revised from edits of 2020-11, to reflect improvements in NJ framework data. 2022-04-25 roster attributes were updated.</edition>
+                <geoform>vector digital data</geoform>
+                <pubinfo>
+                    <pubplace/>
+                    <publish>NJ Office of Information Technology, Office of GIS (NJOGIS)</publish>
+                </pubinfo>
+                <onlink>https://njgin.nj.gov/#!/</onlink>
+                <onlink>https://njgin.nj.gov/njgin/edata/dataproducts/#!/</onlink>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>The Legislative District polygon spatial layer Govt_admin_legdis delineates the legislative districts for New Jersey, beginning with the elections of 2011. The spatial data are based mainly on the NJ Municipal Boundaries layer Govt_admin_municipal_bnd (fka nj_munis), rather than Census Bureau geographic data (TIGER.) Information on officeholders is derived from the legislative roster provided by the NJ Office of Legislative Services. It is updated infrequently and should be checked from an independent source before use. </abstract>
+            <purpose>To provide current legislative boundaries for New Jersey and information about legislative representation. These districts were established during re-districting after the 2010 decennial census. This revised version of the spatial data was created in order to overlay properly with high-quality vector framework GIS data published by the State of New Jersey.</purpose>
+            <supplinf>Roster information contents are the result of the general election held November 2021 and the legislature organization in January 2022.
+
+This feature class represents the Legislative District boundaries for New Jersey, beginning in 2011. It is derived from the official version released by the 2011 redistricting round of the NJ Apportionment Commission, but is not the same as that version. The official version is based on geographic and demographic data from the US Census Bureau, 2010 census. 
+
+This version recreates the district boundary locations using the more-accurate GIS municipal boundary layer Govt_admin_municipal_bnd. District split lines through Newark and Jersey City are based mainly on NJOGIS-published street data. Where the District boundary does not follow a street centerline, physical features on orthophotography, Census Block boundary lines, and the State Legislative District boundaries published by the Census Bureau, were consulted.
+
+Attribute data in this feature class have been added from the NJ Legislative Roster supplied by the Office of Legislative Services. These data are updated as they are received from OLS; typically there is a lag between changes and these updates.</supplinf>
+        </descript>
+        <timeperd>
+            <timeinfo>
+                <sngdate>
+                    <caldate>20220425</caldate>
+                </sngdate>
+            </timeinfo>
+            <current>revision date of roster data</current>
+        </timeperd>
+        <status>
+            <progress>Complete</progress>
+            <update>Annually</update>
+        </status>
+        <spdom>
+            <bounding>
+                <westbc>-75.587089</westbc>
+                <eastbc>-73.899178</eastbc>
+                <northbc>41.357794</northbc>
+                <southbc>38.924577</southbc>
+            </bounding>
+        </spdom>
+        <keywords>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>legdis</themekey>
+                <themekey>legislative</themekey>
+                <themekey>boundaries</themekey>
+                <themekey>boundary</themekey>
+                <themekey>districts</themekey>
+                <themekey>Legislative Districts</themekey>
+                <themekey>Govt_admin_legdis</themekey>
+                <themekey>politics</themekey>
+                <themekey>political</themekey>
+            </theme>
+            <theme>
+                <themekt>ISO 19115 Topic Categories</themekt>
+                <themekey>boundaries</themekey>
+            </theme>
+            <place>
+                <placekt>None</placekt>
+                <placekey>New Jersey</placekey>
+                <placekey>NJ</placekey>
+            </place>
+        </keywords>
+        <accconst>None</accconst>
+        <useconst>This data set is not survey data and must not be used as survey data See the balance of this metadata record for conditions that limit appropriate uses.Acknowledgement of the data set providers, NJ Office of Information Technology, Office of GIS (NJOGIS); and NJ Office of Legislative Services (NJ OLS), would be appreciated for maps, data or other products derived from this data set. The State of New Jersey makes great effort to provide secure, accurate, and complete data and metadata. However, portions of the data and metadata may be incorrect or not current. Any errors or omissions should be reported for investigation. The State of New Jersey, its officers, employees or agents shall not be liable for damages or losses of any kind arising out of or in connection with the use or performance of data and metadata, including but not limited to, damages or losses caused by reliance upon the accuracy or timeliness of any such data and metadata, or damages incurred from the viewing, distributing, or copying of those materials. The data and metadata are provided "as is." No warranty of any kind, implied, expressed, or statutory, including but not limited to the warranties of non-infringement of third party rights, title, merchantability, fitness for a particular purpose, and freedom from computer virus, is given with respect to the data and metadata, or its hyperlinks to other Internet resources. The State disclaims any duty or obligation either to maintain availability of or to update the data and metadata. </useconst>
+        <datacred>NJ Office of Legislative Services (NJ OLS)
+NJ Office of Information Technology, Office of GIS (NJOGIS)
+NJ Department of Environmental Protection, Division of Information Technology, Bureau of Geographic Information Systems (BGIS)</datacred>
+        <native>Esri ArcGIS 10.7.1</native>
+    </idinfo>
+    <dataqual>
+        <attracc>
+            <attraccr>District assignments were checked by overlaying this data set on the layer approved by the Apportionment Commission and inspecting the district labels. Other attribute data were joined from updated roster table and were spot checked only.</attraccr>
+        </attracc>
+        <logic>Most of the district boundaries are based on municipal boundaries as published by NJOGIS, release of April, 2020. District split lines through Newark and Jersey City are mostly based on NJOGIS-published street data (Tran_road_NJ.gdb/Tran_road.) The boundaries are not being updated to the most recent municipal boundary release. Those will be incorporated into the 2023 legislative district boundary data.</logic>
+        <complete>All districts and members of the state legislature are represented. Data set covers the entire geographic extent of New Jersey. Unlike the Census Bureau TIGER data, it does not cover water areas outside of municipal boundaries.</complete>
+        <posacc>
+            <horizpa>
+                <horizpar>Horizontal accuracy of this data set is approximately the same as that for Govt_admin_municipal_bnd. Most of the boundaries are based on documentation and 1:2400 nominal scale orthophotography. A few changes since 2020 have not been incorporated.</horizpar>
+            </horizpa>
+        </posacc>
+        <lineage>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <origin/>
+                        <pubdate>20180817</pubdate>
+                        <title>NJ 2015 Natural Color Orthophoto Cached Tile Base Map Service, 1 foot</title>
+                        <geoform>raster digital data</geoform>
+                        <pubinfo>
+                            <pubplace/>
+                            <publish>NJ Office of Information Technology, Office of GIS (NJOGIS)</publish>
+                        </pubinfo>
+                        <onlink>https://maps.nj.gov/arcgis/rest/services/Basemap/Orthos_Natural_2015_NJ/MapServer</onlink>
+                    </citeinfo>
+                </srccite>
+                <srcscale>2400</srcscale>
+                <typesrc>onLine</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <mdattim>
+                            <sngdate>
+                                <caldate>20150329</caldate>
+                            </sngdate>
+                            <sngdate>
+                                <caldate>20150503</caldate>
+                            </sngdate>
+                        </mdattim>
+                    </timeinfo>
+                    <srccurr>ground condition</srccurr>
+                </srctime>
+                <srccitea>NJ 2015 Natural Color Orthophoto Cached Tile Base Map Service, 1 foot</srccitea>
+                <srccontr>orthophotography</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <origin/>
+                        <pubdate>20200410</pubdate>
+                        <title>Municipalities of New Jersey, New Jersey State Plane NAD83</title>
+                        <geoform>vector digital data</geoform>
+                        <pubinfo>
+                            <pubplace/>
+                            <publish>NJOGIS</publish>
+                        </pubinfo>
+                        <onlink>https://njogis-newjersey.opendata.arcgis.com/datasets/municipal-boundaries-of-nj-hosted-3424</onlink>
+                    </citeinfo>
+                </srccite>
+                <srcscale>2400</srcscale>
+                <typesrc>onLine</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>20200410</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>publication date</srccurr>
+                </srctime>
+                <srccitea>Govt_admin_municipal_bnd</srccitea>
+                <srccontr>NJ Municipal boundary locations and ID attributes</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <origin/>
+                        <pubdate>20110403</pubdate>
+                        <title>NJ Legislative District Boundaries 2011 - 2020</title>
+                        <geoform>vector digital data</geoform>
+                        <pubinfo>
+                            <pubplace/>
+                            <publish>NJ Office of Legislative Services (NJOLS) and NJ Office of Information Technology, Office of GIS (NJOGIS)</publish>
+                        </pubinfo>
+                        <onlink>http://www.apportionmentcommission.org</onlink>
+                    </citeinfo>
+                </srccite>
+                <typesrc>onLine</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>20110403</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>publication date</srccurr>
+                </srctime>
+                <srccitea>DistrictBoundaries_Adopted04032011</srccitea>
+                <srccontr>Legislative district boundary locations</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <origin/>
+                        <pubdate>20110403</pubdate>
+                        <title>Municipalities Sorted by Alphabetical Order</title>
+                        <geoform>document</geoform>
+                        <pubinfo>
+                            <pubplace/>
+                            <publish>NJ Department of State, Division of Elections</publish>
+                        </pubinfo>
+                        <othercit>published as a pdf</othercit>
+                        <onlink>http://www.state.nj.us/state/elections/2011-legislative-districts/towns-alpha.pdf</onlink>
+                    </citeinfo>
+                </srccite>
+                <typesrc>onLine</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>20110403</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>publication date</srccurr>
+                </srctime>
+                <srccitea>Municipality district list</srccitea>
+                <srccontr>List of municipalities and their district assignments</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <origin/>
+                        <pubdate>20110403</pubdate>
+                        <title>New Jersey State Legislative Districts: 2011 - 2020</title>
+                        <geoform>map</geoform>
+                        <pubinfo>
+                            <pubplace/>
+                            <publish>NJ Department of State, Division of Elections</publish>
+                        </pubinfo>
+                        <onlink>http://www.nj.gov/state/elections/2011-legislative-districts/statewide-large.pdf</onlink>
+                    </citeinfo>
+                </srccite>
+                <typesrc>onLine</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>20110403</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>publication date</srccurr>
+                </srctime>
+                <srccitea>Legislative Districts Map</srccitea>
+                <srccontr>map view of municipal boundaries and legislative districts</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <origin/>
+                        <pubdate>20220425</pubdate>
+                        <title>NJ State Legislators, Senate and Assembly, by District</title>
+                        <geoform>tabular digital data</geoform>
+                        <onlink>https://www.njleg.state.nj.us/members/roster.asp</onlink>
+                    </citeinfo>
+                </srccite>
+                <typesrc>onLine</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>20220425</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>Publication date</srccurr>
+                </srctime>
+                <srccitea>GIS.Govt_admin_legroster</srccitea>
+                <srccontr>Roster of the 220th Legislature. Changes are made periodically to reflect resignations, vacancies, appointments, and elections of legislative members. Updates are made from spreadsheet supplied by NJ OLS and/or from the NJ OLS website. Publication date references the day of access or delivery.</srccontr>
+            </srcinfo>
+            <srcinfo>
+                <srccite>
+                    <citeinfo>
+                        <origin/>
+                        <pubdate>20200410</pubdate>
+                        <title>Statewide Road Centerlines for New Jersey (Next Generation 9-1-1 Format)</title>
+                        <geoform>vector digital data</geoform>
+                        <onlink>https://njogis-newjersey.opendata.arcgis.com/datasets/road-centerlines-of-nj</onlink>
+                    </citeinfo>
+                </srccite>
+                <typesrc>onLine</typesrc>
+                <srctime>
+                    <timeinfo>
+                        <sngdate>
+                            <caldate>20200410</caldate>
+                        </sngdate>
+                    </timeinfo>
+                    <srccurr>publication date</srccurr>
+                </srctime>
+                <srccitea>Tran_road_NG911.gdb/Tran_road</srccitea>
+                <srccontr>Statewide road centerlines for NJ</srccontr>
+            </srcinfo>
+            <procstep>
+                <procdesc>Table structure of this feature class was changed to match field widths and names in Govt_admin_legroster.</procdesc>
+                <procdate>20200121</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>NJ Office of Information Technology, Office of GIS (NJOGIS)</cntorg>
+                            <cntper>Edith Konopka, Ph.D., GISP</cntper>
+                        </cntorgp>
+                        <cntpos>Spatial Database Manager</cntpos>
+                        <cntaddr>
+                            <addrtype>mailing</addrtype>
+                            <address>PO Box 212</address>
+                            <city>Trenton</city>
+                            <state>NJ</state>
+                            <postal>08625-0212</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>609-376-7530</cntvoice>
+                        <cntemail>edith.konopka@tech.nj.gov</cntemail>
+                        <hours>9-4</hours>
+                        <cntinst>Email is preferred.</cntinst>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>In order to update the spatial data, a copy was made of municipal boundaries published by NJOGIS 2020-04-10, to use as source data. An attribute was created to hold legislative district identifier. The municipal boundary feature class was superimposed on Legislative District feature class downloaded from the U.S. Census Bureau, and previous Legislative District feature class created by NJOGIS. Municipalities were selected manually and the the legislative district attribute filled by calculation for each set. Split municipalities were assigned to one of the two legislative districts.
+
+After attribution was complete, the municipal boundaries were dissolved on the Legislative District attribute.</procdesc>
+                <procdate>20201030</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Split polygons were created for Newark and Jersey City, at the boundary between the two districts splitting each of these municipalities. The split lines were created mainly by snapping to road centerlines and minor manual digitizing over 2015 high resolution orthophotography. A few segments were snapped to split line from previous NJOGIS data, or directly to district boundary in the latest available legislative district boundaries from the U.S. Census Bureau (TIGER). After creation the parts polygons were merged with the other municipality polygon forming the district.</procdesc>
+                <procdate>20201104</procdate>
+                <proctime>000001</proctime>
+            </procstep>
+            <procstep>
+                <procdesc>The draft Legislative District feature class was copied into feature dataset with a fresh copy of the municipal boundaries. A topology was created disallowing gaps or overlaps within the Legislative District feature class, and requiring its boundary lines to be overlain by municipal boundaries. Cluster tolerance was set at 0.01 (US Survey feet), and ranks set to hold the municipal boundaries stationary. The topology was validated and all errors inspected to make sure they were exceptions (e.g. at split lines, or at outside municipalities at state boundary.) All non-exception errors were corrected.</procdesc>
+                <procdate>20201105</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Updated legislative roster information was added to the feature class by loading records from a spatial view incorporating a legislative roster table and the updated spatial data. Metadata record was updated.</procdesc>
+                <procdate>20210128</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>NJOGIS</cntorg>
+                            <cntper>Edith Konopka</cntper>
+                        </cntorgp>
+                        <cntvoice>609-376-7530</cntvoice>
+                        <cntemail>edith.konopka@tech.nj.gov</cntemail>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>Officeholder attributes were updated by replacing the records in the roster table that feeds the view, and then replacing all the feature class records from the view. Metadata record was edited.</procdesc>
+                <procdate>20210830</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>NJ Office of Information Technology, Office of GIS (NJOGIS)</cntorg>
+                            <cntper>Edith Konopka, Ph.D., GISP</cntper>
+                        </cntorgp>
+                        <cntpos>Spatial Database Manager</cntpos>
+                        <cntaddr>
+                            <addrtype>mailing</addrtype>
+                            <address>PO Box 212</address>
+                            <city>Trenton</city>
+                            <state>NJ</state>
+                            <postal>08625-0212</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>609-376-7530</cntvoice>
+                        <cntemail>edith.konopka@tech.nj.gov</cntemail>
+                        <hours>9-4</hours>
+                        <cntinst>Email is preferred.</cntinst>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+            <procstep>
+                <procdesc>Officeholder attributes were updated by replacing the records in the roster table, joining the table to the feature class, and calculating the twelve officeholder fields of the feature class using the calculate field tool in a model (ArcGIS Pro).</procdesc>
+                <procdate>20220426</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>NJ Office of Information Technology, Office of GIS (NJOGIS)</cntorg>
+                            <cntper>Edith Konopka, Ph.D., GISP</cntper>
+                        </cntorgp>
+                        <cntpos>Spatial Database Manager</cntpos>
+                        <cntaddr>
+                            <addrtype>mailing</addrtype>
+                            <address>PO Box 212</address>
+                            <city>Trenton</city>
+                            <state>NJ</state>
+                            <postal>08625-0212</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntvoice>609-376-7530</cntvoice>
+                        <cntemail>edith.konopka@tech.nj.gov</cntemail>
+                        <hours>9-4</hours>
+                        <cntinst>Email is preferred.</cntinst>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+        </lineage>
+    </dataqual>
+    <spdoinfo>
+        <direct>Vector</direct>
+        <ptvctinf>
+            <sdtsterm>
+                <sdtstype>GT-polygon composed of chains</sdtstype>
+                <ptvctcnt>40</ptvctcnt>
+            </sdtsterm>
+        </ptvctinf>
+    </spdoinfo>
+    <eainfo>
+        <detailed>
+            <enttyp>
+                <enttypl>Govt_admin_legdis</enttypl>
+                <enttypd>Legislative District boundary polygons</enttypd>
+                <enttypds>NJOGIS</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>OBJECTID</attrlabl>
+                <attrdef>Internal feature number.</attrdef>
+                <attrdefs>ESRI</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>Sequential unique whole numbers that are automatically generated.</udom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>DISTRICT</attrlabl>
+                <attrdef>A numeric indicator code for the district</attrdef>
+                <attrdefs>New Jersey Office of Legislative Services</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>Unique district code</udom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SENATE</attrlabl>
+                <attrdef>The name of the state senator for a legislative district.</attrdef>
+                <attrdefs>New Jersey Office of Legislative Services</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>District Senator name as text string</udom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SPARTY</attrlabl>
+                <attrdef>The political party to which the state senator belongs.</attrdef>
+                <attrdefs>New Jersey Office of Legislative Services</attrdefs>
+                <attrdomv>
+                                        
+                    <edom>
+                                                
+                        <edomv>R</edomv>
+                                                
+                        <edomvd>Republican</edomvd>
+                                                
+                        <edomvds>New Jersey Office of Legislative Services</edomvds>
+                                            
+                    </edom>
+                                        
+                    <edom>
+                                                
+                        <edomv>D</edomv>
+                                                
+                        <edomvd>Democrat</edomvd>
+                                                
+                        <edomvds>New Jersey Office of Legislative Services</edomvds>
+                                            
+                    </edom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>ASSEMBLY1</attrlabl>
+                <attrdef>The name of one of the assemblymen for each district.</attrdef>
+                <attrdefs>New Jersey Office of Legislative Services</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>District Assemblymen</udom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>A1PARTY</attrlabl>
+                <attrdef>The political party to which the representative in  ASSEMBLY1 belongs.</attrdef>
+                <attrdefs>New Jersey Office of Legislative Services</attrdefs>
+                <attrdomv>
+                                        
+                    <edom>
+                                                
+                        <edomv>R</edomv>
+                                                
+                        <edomvd>Republican</edomvd>
+                                                
+                        <edomvds>New Jersey Office of Legislative Services</edomvds>
+                                            
+                    </edom>
+                                        
+                    <edom>
+                                                
+                        <edomv>D</edomv>
+                                                
+                        <edomvd>Democrat</edomvd>
+                                                
+                        <edomvds>New Jersey Office of Legislative Services</edomvds>
+                                            
+                    </edom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>ASSEMBLY2</attrlabl>
+                <attrdef>The name of one of the assemblymen for each district.</attrdef>
+                <attrdefs>New Jersey Office of Legislative Services</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>District Assemblymen</udom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>A2PARTY</attrlabl>
+                <attrdef>The political party to which the representative in ASSEMBLY2 belongs.</attrdef>
+                <attrdefs>New Jersey Office of Legislative Services</attrdefs>
+                <attrdomv>
+                                        
+                    <edom>
+                                                
+                        <edomv>R</edomv>
+                                                
+                        <edomvd>Republican</edomvd>
+                                                
+                        <edomvds>New Jersey Office of Legislative Services</edomvds>
+                                            
+                    </edom>
+                                        
+                    <edom>
+                                                
+                        <edomv>D</edomv>
+                                                
+                        <edomvd>Democrat</edomvd>
+                                                
+                        <edomvds>New Jersey Office of Legislative Services</edomvds>
+                                            
+                    </edom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>DIST_LABEL</attrlabl>
+                <attrdef>A numeric indicator code for the district for labeling</attrdef>
+                <attrdefs>New Jersey Office of Legislative Services</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>District code</udom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SENATOR</attrlabl>
+                <attrdef>Formal name of the state senator for a legislative district with the party affiliation.</attrdef>
+                <attrdefs>New Jersey Office of Legislative Services</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>District Senator</udom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>S_CONTACT</attrlabl>
+                <attrdef>Office locations and contact information for state senator</attrdef>
+                <attrdefs>New Jersey Office of Legislative Services</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>District Senator Contact Information</udom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>A1_REP</attrlabl>
+                <attrdef>Formal name of the assembly representative for a legislative district with the party affiliation.</attrdef>
+                <attrdefs>New Jersey Office of Legislative Services</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>District Assemblymen</udom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>A1_CONTACT</attrlabl>
+                <attrdef>Office locations and contact information for assembly representative</attrdef>
+                <attrdefs>New Jersey Office of Legislative Services</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>District Assemblymen Contact Information</udom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>A2_REP</attrlabl>
+                <attrdef>Formal name of the assembly representative for a legislative district with the party affiliation.</attrdef>
+                <attrdefs>New Jersey Office of Legislative Services</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>District Assemblymen</udom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>A2_CONTACT</attrlabl>
+                <attrdef>Office locations and contact information for assembly representative</attrdef>
+                <attrdefs>New Jersey Office of Legislative Services</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>District Assemblymen Contact Information</udom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>ACRES</attrlabl>
+                <attrdef>Area of the legislative district in acres</attrdef>
+                <attrdefs>NJDEP</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>Calculated from Shape_Area using Python: round((!Shape_Area!/43559.826), 2) Due to round fcn in Python, second decimal figure is unreliable.</udom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SQ_MILES</attrlabl>
+                <attrdef>Area of the legislative district in square miles</attrdef>
+                <attrdefs>NJDEP</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>Calculated from Shape_Area using Python: round((!Shape_Area!/27828800), 2)   Due to round fcn in Python, second decimal figure is unreliable.</udom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SHAPE</attrlabl>
+                <attrdef>Feature geometry.</attrdef>
+                <attrdefs>ESRI</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>Coordinates defining the features.</udom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>DIST_PAD</attrlabl>
+                <attrdef>District identifier</attrdef>
+                <attrdefs>NJOGIS</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>Two digit district number (as text) with padded ids for 1-9.</udom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SHAPE_Length</attrlabl>
+                <attrdef>Length of feature in internal units.</attrdef>
+                <attrdefs>Esri</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>Positive real numbers that are automatically generated.</udom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SHAPE_Area</attrlabl>
+                <attrdef>Area of feature in internal units squared.</attrdef>
+                <attrdefs>Esri</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>Positive real numbers that are automatically generated.</udom>
+                                    
+                </attrdomv>
+            </attr>
+        </detailed>
+    </eainfo>
+    <distinfo>
+        <distrib>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>NJ Office of Information Technology, Office of GIS (NJOGIS)</cntorg>
+                </cntorgp>
+                <cntaddr>
+                    <addrtype>mailing</addrtype>
+                    <address>PO Box 212</address>
+                    <city>Trenton</city>
+                    <state>NJ</state>
+                    <postal>08625-0212</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>use email</cntvoice>
+                <cntemail>njgin@oit.nj.gov</cntemail>
+            </cntinfo>
+        </distrib>
+        <distliab>See General Constraints, Use Limitation (Use Constraints) for legal language.</distliab>
+        <stdorder>
+            <digform>
+                <digtinfo>
+                    <formname>ArcGIS Online map service - ArcREST</formname>
+                    <formvern>2021-08</formvern>
+                    <formspec>https://developers.arcgis.com/rest/services-reference</formspec>
+                    <formcont>Streamed features</formcont>
+                </digtinfo>
+                <digtopt>
+                    <onlinopt>
+                        <computer>
+                            <networka>
+                                <networkr>https://services2.arcgis.com/XVOqAjTOJ5P6ngMu/arcgis/rest/services</networkr>
+                            </networka>
+                        </computer>
+                    </onlinopt>
+                    <onlinopt>
+                        <computer>
+                            <networka>
+                                <networkr>https://njogis-newjersey.opendata.arcgis.com/datasets/newjersey::legislative-districts-of-nj-hosted-3424</networkr>
+                            </networka>
+                        </computer>
+                    </onlinopt>
+                </digtopt>
+            </digform>
+            <fees>0.00</fees>
+            <ordering>This layer is available as an ArcGIS Online hosted feature service. It also is available for download from NJGIN Open Data in various formats.
+
+***NOTE*** For users who incorporate NJOGIS services into web maps and/or web applications, please sign up for the NJ Geospatial Forum discussion listserv for early notification of service changes. Visit https://nj.gov/njgf/about/listserv/ for more information.</ordering>
+        </stdorder>
+    </distinfo>
+    <metainfo>
+        <metd>20220427</metd>
+        <metc>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>NJOGIS</cntorg>
+                    <cntper>Edith Konopka</cntper>
+                </cntorgp>
+                <cntpos>Spatial Database Manager</cntpos>
+                <cntaddr>
+                    <addrtype>mailing</addrtype>
+                    <address>PO Box 212</address>
+                    <city>Trenton</city>
+                    <state>NJ</state>
+                    <postal>08625</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>609-376-7530</cntvoice>
+                <cntemail>edith.konopka@tech.nj.gov</cntemail>
+            </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>
